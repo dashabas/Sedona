@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 $main_font: 'PT Sans', sans-serif;
+$white_font: #FFFFFF;
 
 *{
   padding: 0;
@@ -12,7 +13,7 @@ $main_font: 'PT Sans', sans-serif;
 .main_container{
   margin: auto;
   max-width: 1100px;
-  padding: 0 30px;
+  //padding: 0 30px;
 }
 
 
@@ -66,7 +67,7 @@ header{
         line-height: 21px;
         text-transform: uppercase;
         background-color: #756257;
-        color: #FFFFFF;
+        color: $white_font;
         border-radius: 4px;
         font-family: $main_font;
       }
@@ -108,4 +109,54 @@ header{
     font-family: $main_font;
     text-align: center;
   }
+}
+
+
+
+.reasons{
+  .card{
+    background-color: #83B3D3;
+    padding: 98px 90px 77px;
+    max-width: 400px;
+    text-align: center;
+    h3{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      text-transform: uppercase;
+      color: $white_font;
+      font-family: $main_font;
+      margin-bottom: 25px;
+    }
+    span {
+      display: inline-block;
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 26px;
+      color: $white_font;
+      font-family: $main_font;
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: $white_font;
+      font-family: $main_font;
+    }
+  }
+}
+
+.town{
+  display: flex;
+
+  .town_picture{
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.facilities{
+  display: flex;
 }
