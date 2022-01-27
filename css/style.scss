@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
-$main_font: 'PT Sans', sans-serif;
 $white_font: #FFFFFF;
+$black_font: #000000;
 
+body{
+  font-family: "PT Sans", sans-serif;
+}
 *{
   padding: 0;
   margin: 0;
@@ -12,10 +15,12 @@ $white_font: #FFFFFF;
 }
 .main_container{
   margin: auto;
-  max-width: 1100px;
-  //padding: 0 30px;
+  max-width: 1280px;
+  padding: 0 40px;
 }
 
+
+/*header*/
 
 header{
   nav{
@@ -35,7 +40,6 @@ header{
           font-size: 20px;
           line-height: 26px;
           color: #000000;
-          font-family: $main_font;
         }
       }
     }
@@ -69,11 +73,13 @@ header{
         background-color: #756257;
         color: $white_font;
         border-radius: 4px;
-        font-family: $main_font;
       }
     }
   }
 }
+
+
+/*section Main_banner*/
 
 .main_banner{
   background-image: url("../images/background1.jpg");
@@ -97,7 +103,6 @@ header{
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    font-family: $main_font;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 23px;
@@ -106,57 +111,263 @@ header{
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
-    font-family: $main_font;
     text-align: center;
   }
 }
 
+
+/*section Reasons*/
+
+//.reasons{
+//  .card{
+//    background-color: #83B3D3;
+//    padding: 98px 90px 77px;
+//    width: 400px;
+//    height: 384px;
+//    text-align: center;
+//    h3{
+//      font-weight: 700;
+//      font-size: 24px;
+//      line-height: 28px;
+//      text-transform: uppercase;
+//      color: $white_font;
+//      margin-bottom: 25px;
+//    }
+//    span {
+//      display: inline-block;
+//      font-size: 18px;
+//      line-height: 21px;
+//      margin-bottom: 26px;
+//      color: $white_font;
+//      font-weight: 400;
+//    }
+//    p {
+//      font-weight: 400;
+//      font-size: 18px;
+//      line-height: 21px;
+//      color: $white_font;
+//    }
+//  }
+//}
+//
+//.town_bridge{
+//  display: flex;
+//  flex-wrap: wrap;
+//  max-height: 384px;
+//  .town_bridge_pic{
+//    img{
+//      display: block;
+//      width: 100%;
+//    }
+//  }
+//}
+//
+//.facilities{
+//  display: flex;
+//  flex-wrap: wrap;
+//  img{
+//    display: inline-block;
+//    margin-bottom: 23px;
+//  }
+//  h4{
+//    font-weight: 700;
+//    font-size: 24px;
+//    line-height: 28px;
+//    text-transform: uppercase;
+//    color: $black_font;
+//    margin-bottom: 20px;
+//  }
+//  p{
+//    font-weight: 400;
+//    font-size: 18px;
+//    line-height: 21px;
+//    color: #333333;
+//  }
+//  .housing{
+//    background-color: rgba(131, 179, 211, 0.12);
+//    padding: 89px 75px 79px;
+//    max-width: 400px;
+//    text-align: center;
+//  }
+//  .food{
+//    background-color: $white_font;
+//    padding: 91px 75px 79px;
+//    max-width: 400px;
+//    text-align: center;
+//  }
+//  .souvenirs{
+//    background-color: rgba(131, 179, 211, 0.12);
+//    padding: 85px 75px 79px;
+//    max-width: 400px;
+//    text-align: center;
+//  }
+//}
+//
+//.reasons_block{
+//  display: flex;
+//  flex-wrap: wrap;
+//  .card{
+//    padding: 98px 75px 77px;
+//    h3, span, p{
+//      color: $black_font;
+//    }
+//    &:first-of-type{
+//      background-color: rgba(131, 179, 211, 0.12);
+//    }
+//    &:nth-of-type(2){
+//      background-color: rgba(131, 179, 211, 0.2);
+//    }
+//    &:last-of-type{
+//      background-color: rgba(131, 179, 211, 0.12);
+//    }
+//  }
+//}
 
 
 .reasons{
-  .card{
-    background-color: #83B3D3;
-    padding: 98px 90px 77px;
-    max-width: 400px;
+  .main_container{
+    display: flex;
+    flex-wrap: wrap;
+    .card{
+      padding: 98px 90px 77px;
+      width: 400px;
+      height: 384px;
+      text-align: center;
+      h3{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: $white_font;
+        margin-bottom: 25px;
+      }
+      span {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 26px;
+        color: $white_font;
+        font-weight: 400;
+      }
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: $white_font;
+      }
+    }
+    .town_bridge{
+      background-color: #83B3D3;
+    }
+    .facilities {
+      width: 400px;
+      height: 384px;
+      text-align: center;
+      img {
+        display: inline-block;
+        margin-bottom: 23px;
+      }
+      h4 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: $black_font;
+        margin-bottom: 20px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #333333;
+      }
+    }
+    .housing{
+      background-color: rgba(131, 179, 211, 0.12);
+      padding: 89px 75px 79px;
+    }
+    .food{
+      background-color: $white_font;
+      padding: 91px 75px 79px;
+    }
+    .souvenirs{
+      background-color: rgba(131, 179, 211, 0.12);
+      padding: 85px 75px 79px;
+    }
+    .square, .road, .tourists{
+      padding: 98px 75px 77px;
+      h3, span, p{
+        color: $black_font;
+      }
+    }
+    .square, .tourists{
+      background: rgba(131, 179, 211, 0.12);
+    }
+    .road{
+      background: rgba(131, 179, 211, 0.2);
+    }
+  }
+}
+
+.town_bridge_pic {
+  height: 384px;
+}
+
+#town {
+  display: block;
+  width: 100%;
+}
+#bridge {
+  display: block;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*section Hotel_search*/
+
+.hotel_search{
+  padding-top: 91px;
+  padding-bottom: 91px;
+  .main_container{
     text-align: center;
-    h3{
+    h2{
       font-weight: 700;
-      font-size: 24px;
-      line-height: 28px;
+      font-size: 30px;
+      line-height: 36px;
       text-transform: uppercase;
-      color: $white_font;
-      font-family: $main_font;
-      margin-bottom: 25px;
+      color: $black_font;
+      margin-bottom: 15px;
     }
-    span {
-      display: inline-block;
-      font-size: 18px;
-      line-height: 21px;
-      margin-bottom: 26px;
-      color: $white_font;
-      font-family: $main_font;
-    }
-    p {
+    p{
       font-weight: 400;
-      font-size: 18px;
-      line-height: 21px;
-      color: $white_font;
-      font-family: $main_font;
+      font-size: 22px;
+      line-height: 26px;
+      color: #333333;
+      margin-bottom: 73px;
     }
-  }
-}
-
-.town{
-  display: flex;
-
-  .town_picture{
-    img{
-      display: block;
+    a{
+      display: inline-block;
+      max-width: 575px;
       width: 100%;
+      padding-top: 13px;
+      padding-bottom: 17px;
+      background-color: #756257;
+      color: $white_font;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 36px;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 10px;
     }
-  }
-}
 
-.facilities{
-  display: flex;
+
+  }
 }
