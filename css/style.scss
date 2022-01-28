@@ -3,6 +3,12 @@
 $white_font: #FFFFFF;
 $black_font: #000000;
 
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
 body{
   font-family: "PT Sans", sans-serif;
 }
@@ -324,12 +330,6 @@ header{
 
 
 
-
-
-
-
-
-
 /*section Hotel_search*/
 
 .hotel_search{
@@ -367,7 +367,93 @@ header{
       text-transform: uppercase;
       border-radius: 10px;
     }
+  }
+}
 
 
+
+/*section Newsletter*/
+
+.newsletter{
+  background-image: url("../images/background2.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  .main_container{
+    text-align: center;
+    h2{
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      text-transform: uppercase;
+      color: $white_font;
+      margin-bottom: 15px;
+    }
+    p{
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 26px;
+      color: $white_font;
+      margin-bottom: 26px;
+    }
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    #email{
+      width: 500px;
+      padding: 15px 70px 15px 25px;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: left;
+      opacity: 60%;
+      border: none;
+      background: #F2F2F2;
+      border-radius: 10px 0 0 10px;
+    }
+    .btn{
+      max-width: 200px;
+      width: 100%;
+      background-color: #83B3D3;
+      color: $white_font;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 700;
+      text-align: center;
+      border: none;
+      border-radius: 0 10px 10px 0;
+      padding: 15px 30px;
+      font-family: "PT Sans", sans-serif;
+    }
+  }
+}
+
+
+
+/*Footer*/
+
+footer{
+  padding-top: 40px;
+  padding-bottom: 30px;
+  .main_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .social{
+      display: flex;
+      li{
+        margin-right: 30px;
+      }
+    }
+    span{
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 40px;
+      text-transform: uppercase;
+      color: $black_font;
+    }
   }
 }
