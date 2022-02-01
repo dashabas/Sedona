@@ -9,8 +9,14 @@ $black_font: #000000;
   }
 }
 
+html{
+  height: 100%;
+}
 body{
   font-family: "PT Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 *{
   padding: 0;
@@ -25,10 +31,13 @@ body{
   padding: 0 40px;
 }
 
-
+section{
+  flex: 1 0 auto;
+}
 /*header*/
 
 header{
+  flex: 0 0 auto;
   nav{
     display: flex;
     justify-content: space-between;
@@ -123,112 +132,6 @@ header{
 
 
 /*section Reasons*/
-
-//.reasons{
-//  .card{
-//    background-color: #83B3D3;
-//    padding: 98px 90px 77px;
-//    width: 400px;
-//    height: 384px;
-//    text-align: center;
-//    h3{
-//      font-weight: 700;
-//      font-size: 24px;
-//      line-height: 28px;
-//      text-transform: uppercase;
-//      color: $white_font;
-//      margin-bottom: 25px;
-//    }
-//    span {
-//      display: inline-block;
-//      font-size: 18px;
-//      line-height: 21px;
-//      margin-bottom: 26px;
-//      color: $white_font;
-//      font-weight: 400;
-//    }
-//    p {
-//      font-weight: 400;
-//      font-size: 18px;
-//      line-height: 21px;
-//      color: $white_font;
-//    }
-//  }
-//}
-//
-//.town_bridge{
-//  display: flex;
-//  flex-wrap: wrap;
-//  max-height: 384px;
-//  .town_bridge_pic{
-//    img{
-//      display: block;
-//      width: 100%;
-//    }
-//  }
-//}
-//
-//.facilities{
-//  display: flex;
-//  flex-wrap: wrap;
-//  img{
-//    display: inline-block;
-//    margin-bottom: 23px;
-//  }
-//  h4{
-//    font-weight: 700;
-//    font-size: 24px;
-//    line-height: 28px;
-//    text-transform: uppercase;
-//    color: $black_font;
-//    margin-bottom: 20px;
-//  }
-//  p{
-//    font-weight: 400;
-//    font-size: 18px;
-//    line-height: 21px;
-//    color: #333333;
-//  }
-//  .housing{
-//    background-color: rgba(131, 179, 211, 0.12);
-//    padding: 89px 75px 79px;
-//    max-width: 400px;
-//    text-align: center;
-//  }
-//  .food{
-//    background-color: $white_font;
-//    padding: 91px 75px 79px;
-//    max-width: 400px;
-//    text-align: center;
-//  }
-//  .souvenirs{
-//    background-color: rgba(131, 179, 211, 0.12);
-//    padding: 85px 75px 79px;
-//    max-width: 400px;
-//    text-align: center;
-//  }
-//}
-//
-//.reasons_block{
-//  display: flex;
-//  flex-wrap: wrap;
-//  .card{
-//    padding: 98px 75px 77px;
-//    h3, span, p{
-//      color: $black_font;
-//    }
-//    &:first-of-type{
-//      background-color: rgba(131, 179, 211, 0.12);
-//    }
-//    &:nth-of-type(2){
-//      background-color: rgba(131, 179, 211, 0.2);
-//    }
-//    &:last-of-type{
-//      background-color: rgba(131, 179, 211, 0.12);
-//    }
-//  }
-//}
-
 
 .reasons{
   .main_container{
@@ -432,10 +335,101 @@ header{
 }
 
 
+/*section Hotels_Sedona*/
+
+.hotels_sedona{
+  background-image: url("../images/catalog-background.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 83px;
+  h2{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: $white_font;
+  }
+}
+
+.breadcrumb{
+  ul{
+    li{
+      display: inline;
+    }
+    &:first-of-type{
+      li{
+        background: transparent url("../images/home_nav.svg") 0 0 no-repeat;
+      }
+    }
+  }
+}
+
+
+
+
+
+/*section Newsletter_hotels*/
+
+.newsletter_hotels{
+  padding-top: 89px;
+  padding-bottom: 138px;
+  .main_container{
+    text-align: center;
+    h2{
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      text-transform: uppercase;
+      color: $black_font;
+      margin-bottom: 15px;
+    }
+    p{
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 26px;
+      color: $black_font;
+      margin-bottom: 26px;
+    }
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    #email_2{
+      width: 500px;
+      padding: 15px 70px 15px 25px;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: left;
+      opacity: 60%;
+      border: none;
+      background: #F2F2F2;
+      border-radius: 10px 0 0 10px;
+    }
+    .btn{
+      max-width: 200px;
+      width: 100%;
+      background-color: #83B3D3;
+      color: $white_font;
+      text-transform: uppercase;
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 700;
+      text-align: center;
+      border: none;
+      border-radius: 0 10px 10px 0;
+      padding: 15px 30px;
+      font-family: "PT Sans", sans-serif;
+    }
+  }
+}
+
+
 
 /*Footer*/
 
 footer{
+  flex: 0 0 auto;
   padding-top: 40px;
   padding-bottom: 30px;
   .main_container{
