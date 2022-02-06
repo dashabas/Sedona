@@ -290,7 +290,6 @@ header {
 
 .filter_form {
   display: flex;
-  justify-content: space-between;
   margin-top: 45px; }
   .filter_form h3 {
     font-weight: 700;
@@ -298,6 +297,13 @@ header {
     line-height: 26px;
     color: #FFFFFF;
     margin-bottom: 30px; }
+  .filter_form .infrastructure {
+    margin-right: 67px; }
+  .filter_form .housing_filter {
+    margin-right: 167px; }
+  .filter_form .price {
+    margin-right: 81px;
+    flex-grow: 1; }
   .filter_form .infrastructure_check {
     margin-bottom: 13px; }
     .filter_form .infrastructure_check .infrastructure_label {
@@ -429,6 +435,77 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield; }
+
+.filter_price {
+  display: flex;
+  margin-bottom: 20px; }
+  .filter_price .price_label {
+    display: flex;
+    justify-content: space-between;
+    max-width: 143px;
+    width: 100%;
+    padding: 13px 17px 11px 19px;
+    border: 2px solid #FFFFFF; }
+    .filter_price .price_label span {
+      color: #FFFFFF;
+      opacity: 0.3; }
+  .filter_price .label_min {
+    border-radius: 4px 0 0 4px;
+    border-right: none; }
+  .filter_price .label_max {
+    border-radius: 0 4px 4px 0; }
+  .filter_price .price_input {
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF; }
+    .filter_price .price_input:focus {
+      outline: none; }
+    .filter_price .price_input::placeholder {
+      color: #FFFFFF; }
+
+.filter_price_slider {
+  max-width: 284px; }
+
+.noUi-horizontal .noUi-handle-upper {
+  right: 0; }
+
+.noUi-target {
+  background-color: #FFFFFF;
+  border: none;
+  box-shadow: none;
+  height: 4px; }
+
+.noUi-connect {
+  background-color: #83B3D3; }
+
+.noUi-horizontal .noUi-handle {
+  height: 20px;
+  width: 20px;
+  box-shadow: none;
+  border-radius: 5px;
+  top: -8px; }
+
+.noUi-handle:after {
+  display: none; }
+.noUi-handle:before {
+  display: none; }
+
+/*section Search_result*/
+.search_result {
+  padding-top: 44px;
+  padding-bottom: 40px; }
+  .search_result .main_container {
+    display: flex;
+    justify-content: space-between; }
+    .search_result .main_container h3 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 39px;
+      text-transform: uppercase;
+      color: #000000; }
+
+.sort {
+  padding: 12px 100px 13px 19px; }
 
 /*section Newsletter_hotels*/
 .newsletter_hotels {

@@ -6,7 +6,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Гостиницы Седоны</title>
+
+    <link rel="stylesheet" href="css/nouislider.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+
 
 </head>
 <body>
@@ -63,8 +67,8 @@
             </ul>
         </nav>
         <div class="filter">
-            <form action="#" method="post" class="filter_form">
-                <div>
+            <form action="#" method="get" class="filter_form">
+                <div class="infrastructure">
                     <h3>Инфраструктура:</h3>
                     <div class="infrastructure_check">
                         <label class="infrastructure_label" for="swimming_pool">
@@ -85,7 +89,7 @@
                         </label>
                     </div>
                 </div>
-                <div>
+                <div class="housing_filter">
                     <h3>Тип жилья:</h3>
                     <div class="housing_radio">
                         <label class="housing_label" for="hotel">
@@ -108,12 +112,17 @@
                 </div>
                 <div class="price">
                     <h3>Стоимость, ₽:</h3>
-                    <label>
-                        <input type="number">
-                    </label>
-                    <label>
-                        <input type="number">
-                    </label>
+                    <div class="filter_price">
+                        <label class="price_label label_min">
+                            <input class="price_input" type="number" min="0" max="9000" placeholder="0" id="input-0">
+                            <span>от</span>
+                        </label>
+                        <label class="price_label label_max">
+                            <input class="price_input" type="number" min="0" max="10000" placeholder="9000" id="input-1">
+                            <span>до</span>
+                        </label>
+                    </div>
+                    <div class="filter_price_slider" id="range-slider"></div>
                 </div>
                 <div class="btn_price">
                     <div>
@@ -127,6 +136,22 @@
         </div>
     </div>
 </section>
+
+
+<section class="search_result">
+    <div class="main_container">
+        <h3>Найдено гостиниц: 38</h3>
+        <form action="" method="get">
+            <select class="sort" name="sort">
+                <option value="low_price">Сначала дешёвые</option>
+                <option value="high_price">Сначала дорогие</option>
+                <option value="best_review">Лучшие отзывы</option>
+            </select>
+
+        </form>
+    </div>
+</section>
+
 
 
 <!--section Newsletter-->
@@ -175,6 +200,10 @@
 </footer>
 
 
+
+
+<script src="js/nouislider.min.js"></script>
+<script src="js/range-slider.js"></script>
 
 </body>
 </html>
