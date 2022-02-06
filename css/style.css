@@ -272,12 +272,163 @@ header {
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    margin-bottom: 5px; }
 
-.breadcrumb ul li {
-  display: inline; }
-.breadcrumb ul:first-of-type li {
-  background: transparent url("../images/home_nav.svg") 0 0 no-repeat; }
+.breadcrumb .breadcrumb_item {
+  display: inline-block; }
+  .breadcrumb .breadcrumb_item .breadcrumb_link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF; }
+  .breadcrumb .breadcrumb_item .breadcrumb_link_home:before {
+    content: url("../images/home_nav.svg"); }
+  .breadcrumb .breadcrumb_item:first-of-type:after {
+    content: url("../images/nav-link.svg");
+    margin: 0 10px; }
+
+.filter_form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px; }
+  .filter_form h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-bottom: 30px; }
+  .filter_form .infrastructure_check {
+    margin-bottom: 13px; }
+    .filter_form .infrastructure_check .infrastructure_label {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 23px;
+      color: #FFFFFF; }
+      .filter_form .infrastructure_check .infrastructure_label .infrastructure_input {
+        margin-right: 19px; }
+  .filter_form .housing_radio {
+    margin-bottom: 13px; }
+    .filter_form .housing_radio .housing_label {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 23px;
+      color: #FFFFFF; }
+      .filter_form .housing_radio .housing_label .housing_input {
+        margin-right: 19px; }
+
+.btn_price {
+  padding-top: 60px; }
+  .btn_price .btn_submit {
+    background: #83B3D3;
+    border-radius: 4px;
+    display: inline-block;
+    width: 100%;
+    max-width: 160px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding: 13px 19px;
+    box-sizing: border-box;
+    border: none;
+    font-family: "PT Sans", sans-serif; }
+    .btn_price .btn_submit:hover {
+      cursor: pointer; }
+  .btn_price .btn_reset {
+    margin-top: 20px;
+    background: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    box-sizing: border-box;
+    padding: 0 19px;
+    font-family: "PT Sans", sans-serif; }
+    .btn_price .btn_reset:hover {
+      cursor: pointer; }
+
+.infrastructure_input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0; }
+
+.infrastructure_text {
+  display: inline-flex;
+  align-items: center;
+  position: relative; }
+
+.infrastructure_text:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  margin-right: 19px;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%; }
+.infrastructure_text:after {
+  content: url("../images/tick.svg");
+  position: absolute;
+  bottom: 1px;
+  left: 5px;
+  opacity: 0; }
+.infrastructure_text:hover {
+  cursor: pointer; }
+
+.infrastructure_input:checked + .infrastructure_text:after {
+  opacity: 1; }
+
+.housing_input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0; }
+
+.housing_text {
+  display: inline-flex;
+  align-items: center;
+  position: relative; }
+
+.housing_text:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  margin-right: 19px;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%; }
+.housing_text:after {
+  content: url("../images/radio.svg");
+  position: absolute;
+  bottom: 1px;
+  left: 6px;
+  opacity: 0; }
+.housing_text:hover {
+  cursor: pointer; }
+
+.housing_input:checked + .housing_text:after {
+  opacity: 1; }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
 
 /*section Newsletter_hotels*/
 .newsletter_hotels {
@@ -325,6 +476,8 @@ header {
       border-radius: 0 10px 10px 0;
       padding: 15px 30px;
       font-family: "PT Sans", sans-serif; }
+      .newsletter_hotels form .btn:hover {
+        cursor: pointer; }
 
 /*Footer*/
 footer {

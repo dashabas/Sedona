@@ -54,13 +54,80 @@
         <h2>Гостиницы Седоны</h2>
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <ul>
-                <li><a href="index.html"></a></li>
-                <li><span aria-current="page">Гостиницы</span></li>
+                <li class="breadcrumb_item">
+                    <a class="breadcrumb_link_home" href="index.html"></a>
+                </li>
+                <li class="breadcrumb_item">
+                    <span class="breadcrumb_link" aria-current="page">Гостиницы</span>
+                </li>
             </ul>
         </nav>
-
+        <div class="filter">
+            <form action="#" method="post" class="filter_form">
+                <div>
+                    <h3>Инфраструктура:</h3>
+                    <div class="infrastructure_check">
+                        <label class="infrastructure_label" for="swimming_pool">
+                            <input class="infrastructure_input" type="checkbox" id="swimming_pool" name="infrastructure" value="swimming_pool" checked>
+                            <span class="infrastructure_text">Бассейн</span>
+                        </label>
+                    </div>
+                    <div class="infrastructure_check">
+                        <label class="infrastructure_label" for="parking">
+                            <input class="infrastructure_input" type="checkbox" id="parking" name="infrastructure" value="parking" checked>
+                            <span class="infrastructure_text">Парковка</span>
+                        </label>
+                    </div>
+                    <div class="infrastructure_check">
+                        <label class="infrastructure_label" for="wi-fi">
+                            <input class="infrastructure_input" type="checkbox" id="wi-fi" name="infrastructure" value="wi-fi">
+                            <span class="infrastructure_text">Wi-Fi</span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <h3>Тип жилья:</h3>
+                    <div class="housing_radio">
+                        <label class="housing_label" for="hotel">
+                            <input class="housing_input" type="radio" id="hotel" name="housing_type" value="hotel" checked>
+                            <span class="housing_text">Гостиница</span>
+                        </label>
+                    </div>
+                    <div class="housing_radio">
+                        <label class="housing_label" for="motel">
+                            <input class="housing_input" type="radio" id="motel" name="housing_type" value="motel">
+                            <span class="housing_text">Мотель</span>
+                        </label>
+                    </div>
+                    <div class="housing_radio">
+                        <label class="housing_label" for="apartments">
+                            <input class="housing_input" type="radio" id="apartments" name="housing_type" value="apartments">
+                            <span class="housing_text">Апартаменты</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="price">
+                    <h3>Стоимость, ₽:</h3>
+                    <label>
+                        <input type="number">
+                    </label>
+                    <label>
+                        <input type="number">
+                    </label>
+                </div>
+                <div class="btn_price">
+                    <div>
+                        <button class="btn_submit" type="submit">Применить</button>
+                    </div>
+                    <div>
+                        <button class="btn_reset" type="reset">Сбросить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
+
 
 <!--section Newsletter-->
 
