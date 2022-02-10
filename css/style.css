@@ -494,18 +494,39 @@ input[type=number] {
 .search_result {
   padding-top: 44px;
   padding-bottom: 40px; }
-  .search_result .main_container {
+  .search_result .search_container {
     display: flex;
-    justify-content: space-between; }
-    .search_result .main_container h3 {
+    margin-bottom: 42px; }
+    .search_result .search_container h3 {
       font-weight: 700;
       font-size: 30px;
       line-height: 39px;
       text-transform: uppercase;
-      color: #000000; }
+      color: #000000;
+      margin-right: 192px; }
+  .search_result hr {
+    max-width: 1056px;
+    width: 100%;
+    margin: auto;
+    border: 1px solid #E6E6E6; }
 
 .sort {
-  padding: 12px 100px 13px 19px; }
+  padding: 12px 100px 13px 19px;
+  margin-right: 81px; }
+
+.search_form {
+  display: flex; }
+
+.list_item {
+  display: flex;
+  margin-top: 31px; }
+  .list_item .list_photo {
+    margin-right: 36px; }
+    .list_item .list_photo img {
+      display: block;
+      width: 100%; }
+  .list_item .list_btn {
+    display: flex; }
 
 /*section Newsletter_hotels*/
 .newsletter_hotels {

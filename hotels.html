@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -67,7 +67,7 @@
             </ul>
         </nav>
         <div class="filter">
-            <form action="#" method="get" class="filter_form">
+            <form action="#" method="get" class="filter_form" name="filter">
                 <div class="infrastructure">
                     <h3>Инфраструктура:</h3>
                     <div class="infrastructure_check">
@@ -139,16 +139,109 @@
 
 
 <section class="search_result">
-    <div class="main_container">
+    <div class="main_container search_container">
         <h3>Найдено гостиниц: 38</h3>
-        <form action="" method="get">
+        <form action="" method="get" name="search" class="search_form">
             <select class="sort" name="sort">
                 <option value="low_price">Сначала дешёвые</option>
                 <option value="high_price">Сначала дорогие</option>
                 <option value="best_review">Лучшие отзывы</option>
             </select>
-
+            <div>
+                <label>
+                    <input type="radio">
+                </label>
+                <label>
+                    <input type="radio">
+                </label>
+                <label>
+                    <input type="radio">
+                </label>
+            </div>
         </form>
+    </div>
+    <hr>
+    <div class="main_container">
+        <div class="list_item">
+            <div class="list_photo">
+                <img src="images/hotel_1.jpg" alt="AmaraResort&Spa">
+            </div>
+            <div>
+                <h4>Amara Resort & Spa</h4>
+                <div>
+                    <span>Гостиница</span>
+                    <span>От 4000 ₽</span>
+                </div>
+                <div class="list_btn">
+                    <a href="#">подробнее</a>
+                    <form action="" method="get">
+                        <button>В избранное</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="list_item">
+            <div class="list_photo">
+                <img src="images/hotel_2.jpg" alt="AmaraResort&Spa">
+            </div>
+            <div>
+                <h4>Desert Quail Inn</h4>
+                <div>
+                    <span>Мотель</span>
+                    <span>От 3000 ₽</span>
+                </div>
+                <div class="list_btn">
+                    <a href="#">подробнее</a>
+                    <form action="" method="get">
+                        <button>В избранное</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="list_item">
+            <div class="list_photo">
+                <img src="images/hotel_3.jpg" alt="AmaraResort&Spa">
+            </div>
+            <div>
+                <h4>Villas at Poco Diablo</h4>
+                <div>
+                    <span>Апартаменты</span>
+                    <span>От 2000 ₽</span>
+                </div>
+                <div class="list_btn">
+                    <a href="#">подробнее</a>
+                    <form action="" method="get">
+                        <button>В избранное</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="list_item">
+            <div class="list_photo">
+                <img src="images/hotel_4.jpg" alt="AmaraResort&Spa">
+            </div>
+            <div>
+                <h4>GreenTree Inn</h4>
+                <div>
+                    <span>Гостиница</span>
+                    <span>От 3000 ₽</span>
+                </div>
+                <div class="list_btn">
+                    <a href="#">подробнее</a>
+                    <form action="" method="get">
+                        <button>В избранное</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <a href="#">Загрузить ещё</a>
+        </div>
+        <hr>
     </div>
 </section>
 
