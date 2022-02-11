@@ -495,8 +495,7 @@ input[type=number] {
   padding-top: 44px;
   padding-bottom: 40px; }
   .search_result .search_container {
-    display: flex;
-    margin-bottom: 42px; }
+    display: flex; }
     .search_result .search_container h3 {
       font-weight: 700;
       font-size: 30px;
@@ -504,10 +503,12 @@ input[type=number] {
       text-transform: uppercase;
       color: #000000;
       margin-right: 192px; }
-  .search_result hr {
-    max-width: 1056px;
+  .search_result .line {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 31px;
+    max-width: 1100px;
     width: 100%;
-    margin: auto;
     border: 1px solid #E6E6E6; }
 
 .sort {
@@ -518,15 +519,99 @@ input[type=number] {
   display: flex; }
 
 .list_item {
-  display: flex;
-  margin-top: 31px; }
+  display: flex; }
   .list_item .list_photo {
     margin-right: 36px; }
     .list_item .list_photo img {
       display: block;
       width: 100%; }
-  .list_item .list_btn {
-    display: flex; }
+  .list_item .list_hotel {
+    margin-right: 361px; }
+    .list_item .list_hotel h4 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 31px;
+      margin-bottom: 1px; }
+
+.list_desc {
+  display: flex; }
+  .list_desc .type_btn {
+    max-width: 151px;
+    margin-right: 8px; }
+    .list_desc .type_btn span {
+      display: inline-block;
+      margin-bottom: 31px;
+      font-size: 18px;
+      line-height: 23px; }
+    .list_desc .type_btn a {
+      display: inline-block;
+      padding: 9px 25px 10px;
+      max-width: 151px;
+      width: 100%;
+      background: #756257;
+      border-radius: 4px;
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      text-align: center;
+      text-transform: uppercase;
+      box-sizing: border-box; }
+  .list_desc .price_btn span {
+    display: inline-block;
+    margin-bottom: 31px;
+    font-size: 18px;
+    line-height: 23px; }
+  .list_desc .price_btn button {
+    padding: 9px 18px 10px;
+    max-width: 160px;
+    width: 100%;
+    background: #83B3D3;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box; }
+  .list_desc .price_btn .choice {
+    background: #7DB54F; }
+
+.stars {
+  align-self: flex-end;
+  text-align: center; }
+  .stars i {
+    color: #83B3D3;
+    width: 18px;
+    height: 17px; }
+  .stars .rating {
+    display: inline-block;
+    margin-top: 63px;
+    background: #F2F2F2;
+    border-radius: 4px;
+    padding: 9px 27px 10px;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase; }
+
+.download_more {
+  text-align: center; }
+  .download_more a {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    border-radius: 4px;
+    padding: 13px 50px;
+    max-width: 625px;
+    width: 100%; }
 
 /*section Newsletter_hotels*/
 .newsletter_hotels {
